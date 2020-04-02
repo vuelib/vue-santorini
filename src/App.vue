@@ -5,6 +5,16 @@
 
       <div class="ess row">
         <div class="ess col lg-12">
+          <sant-tabs v-model="tab">
+            <sant-tab name="tab1"> Tab 1 </sant-tab>
+            <sant-tab name="tab2"> Tab 2 </sant-tab>
+            <sant-tab name="tab3"> Tab 3 </sant-tab>
+          </sant-tabs>
+        </div>
+      </div>
+
+      <div class="ess row">
+        <div class="ess col lg-12">
           <sant-button type="filled" shape="rounded" color="primary" > Button </sant-button>
           <sant-button type="cleaned" shape="rounded" color="primary" > Button </sant-button>
         </div>
@@ -64,6 +74,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 // COMPONENTS
+import SantTab from '@/components/tabs/SantTab.vue';
+import SantTabs from '@/components/tabs/SantTabs.vue';
 import SantButton from '@/components/buttons/SantButton.vue';
 import SantFloatButton from '@/components/buttons/SantFloatButton.vue';
 import SantAvatar from '@/components/avatars/SantAvatar.vue';
@@ -73,6 +85,8 @@ import SantBadge from '@/components/badges/SantBadge.vue';
 @Component({
   name: 'App',
   components: {
+    SantTab,
+    SantTabs,
     SantButton,
     SantFloatButton,
     SantAvatar,
@@ -80,5 +94,12 @@ import SantBadge from '@/components/badges/SantBadge.vue';
     SantBadge,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private tab: string;
+
+  constructor() {
+    super();
+    this.tab = 'tab2';
+  }
+}
 </script>
