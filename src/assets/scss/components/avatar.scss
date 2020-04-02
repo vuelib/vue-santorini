@@ -1,0 +1,26 @@
+.ess.avatar {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  cursor: pointer;
+  font-size: 20px;
+  min-height: 36px;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.ess.avatar > img {
+  width: 100%;
+  height: 100%;
+}
+
+@each $name, $shape in $shapes {
+
+  .ess.avatar.#{$name} {
+    border-radius: $shape;
+  }
+}

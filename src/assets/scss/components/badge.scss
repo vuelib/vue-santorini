@@ -1,0 +1,33 @@
+.ess.badge {
+  padding: 0 16px;
+  font-size: 12px;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 20px;
+  user-select: none;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  font-weight: $badge-font-weight;
+}
+
+@each $shape, $value in $badge-shape {
+
+  .ess.badge.#{$shape} {
+    border-radius: map-get($value, 'corner');
+  }
+}
+
+@each $color, $value in $colors {
+
+  .ess.badge.filled.#{$color} {
+    color: map-get($value, 'font');
+    background: map-get($value, 'base');
+  }
+
+  .ess.badge.highlighted.#{$color} {
+    background: rgba(map-get($value, 'base'), 0.1);
+    color: map-get($value, 'base');
+  }
+}
