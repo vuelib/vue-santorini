@@ -1,15 +1,39 @@
 <template>
-  <li class="ess tab" :id="id" @click="change">
+  <li class="ess tab body-1" :id="id" @click="changeTab">
     <span><slot></slot></span>
   </li>
 </template>
 
 <script lang="ts">
-import EssTab from '@/components/tabs/EssTab';
-import { Component } from 'vue-property-decorator';
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable lines-between-class-members */
+
+import Vue from 'vue';
+import { Component, Prop } from 'vue-property-decorator';
+
+// UTILS
+import hash from 'random-hash';
 
 @Component({
   name: 'SantTab',
 })
-export default class SantTab extends EssTab {}
+export default class SantTab extends Vue {
+  @Prop({ default: '' })
+  name!: string;
+
+  public id: string;
+  protected parent: any;
+
+  constructor() {
+    super();
+
+    this.id = hash();
+    this.parent = this.$parent;
+  }
+
+  public changeTab(): void {
+    this.parent.changeTab(this.id);
+  }
+}
 </script>

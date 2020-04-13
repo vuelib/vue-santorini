@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { Component } from 'vue-property-decorator';
-import EssAvatar from '@/components/avatars/EssAvatar';
+import EssAvatar from './EssAvatar';
 
 @Component({
   name: 'SantAvatar',

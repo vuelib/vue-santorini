@@ -1,6 +1,6 @@
+/* eslint-disable lines-between-class-members */
 <template>
   <div id="app">
-
     <div class="ess container">
 
       <div class="ess row">
@@ -42,7 +42,9 @@
       </div>
 
     </div>
-
+    <sant-window>
+      dwdwd
+    </sant-window>
   </div>
 </template>
 
@@ -70,6 +72,7 @@
 </style>
 
 <script lang="ts">
+// eslint-disable-next-line lines-between-class-members
 
 import { Component, Vue } from 'vue-property-decorator';
 
@@ -81,6 +84,7 @@ import SantFloatButton from '@/components/buttons/SantFloatButton.vue';
 import SantAvatar from '@/components/avatars/SantAvatar.vue';
 import SantAvatarIcon from '@/components/avatars/SantAvatarIcon.vue';
 import SantBadge from '@/components/badges/SantBadge.vue';
+import SantWindow from '@/components/window/SantWindow.vue';
 
 @Component({
   name: 'App',
@@ -92,6 +96,7 @@ import SantBadge from '@/components/badges/SantBadge.vue';
     SantAvatar,
     SantAvatarIcon,
     SantBadge,
+    SantWindow,
   },
 })
 export default class App extends Vue {
@@ -101,5 +106,6 @@ export default class App extends Vue {
     super();
     this.tab = 'tab2';
   }
+
 }
 </script>

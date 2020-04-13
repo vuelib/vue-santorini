@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/*
+|--------------------------------------------------------------------------
+| VARIABLES
+|--------------------------------------------------------------------------
+*/
+
+$font-weights: (
+  bold: 700,
+  light: 300,
+  regular: 400,
+);
+
+$font-sizes: (
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  26: 26px,
+  28: 28px,
+);
+
+$dark-colors: (
+  100: rgba(0, 0, 0, 1),
+  80: rgba(0, 0, 0, 0.8),
+  60: rgba(0, 0, 0, 0.6),
+  40: rgba(0, 0, 0, 0.4),
+  20: rgba(0, 0, 0, 0.2),
+);
+
+$light-colors: (
+  100: rgba(255, 255, 255, 1),
+  80: rgba(255, 255, 255, 0.8),
+  60: rgba(255, 255, 255, 0.6),
+  40: rgba(255, 255, 255, 0.4),
+  20: rgba(255, 255, 255, 0.2),
+);
+
+/*
+|--------------------------------------------------------------------------
+| SCSS
+|--------------------------------------------------------------------------
+*/
+
+@function font-weigth($weight) {
+  @return map-get($font-weights, $weight)
+};
+
+@function font-size($size) {
+  @return map-get($font-sizes, $size)
+};
+
+@function font-dark($per) {
+  @return map-get($dark-colors, $per)
+};
+
+@function font-light($per) {
+  @return map-get($light-colors, $per)
+};
+
+/*
+|--------------------------------------------------------------------------
+| SCSS
+|--------------------------------------------------------------------------
+*/
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+@each $name, $weight in $font-weights {
+  
+  .ess.font-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+@each $name, $size in $font-sizes {
+  
+  .ess.font-size-#{$name}px {
+    font-size: $size;
+  }
+}
+
+@each $name, $rgba in $dark-colors {
+  
+  .ess.font-color-dark-#{$name}per {
+    color: $rgba;
+  }
+}
+
+@each $name, $rgba in $light-colors {
+  
+  .ess.font-color-light-#{$name}per {
+    color: $rgba;
+  }
+}

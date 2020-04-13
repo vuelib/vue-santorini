@@ -7,7 +7,7 @@
 <script lang="ts">
 
 import { Component } from 'vue-property-decorator';
-import EssButton from '@/components/buttons/EssButton';
+import EssButton from './EssButton';
 
 @Component({
   name: 'SantButton',
