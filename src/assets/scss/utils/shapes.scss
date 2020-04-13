@@ -1,0 +1,54 @@
+/*
+|--------------------------------------------------------------------------
+| VARIABLES
+|--------------------------------------------------------------------------
+*/
+
+$shapes: (
+  square: 0px,
+  rounded: 12px,
+  pill: 99999px,
+);
+
+$corners: (
+  6: 6px,
+  8: 8px,
+  10: 10px,
+  12: 12px,
+);
+
+/*
+|--------------------------------------------------------------------------
+| SCSS
+|--------------------------------------------------------------------------
+*/
+
+@each $name, $shape in $shapes {
+  
+  .ess.#{$name} {
+    border-radius: $shape;
+  }
+}
+
+.ess.rounded-top {
+  border-radius: 12px 12px 0 0;
+}
+
+.ess.rounded-bottom {
+  border-radius: 0 0 12px 12px;
+}
+
+@each $name, $corner in $corners {
+  
+  .ess.rounded.corner-#{$name}px {
+    border-radius: $corner;
+  }
+
+  .ess.rounded-top.corner-#{$name}px {
+    border-radius: $corner $corner 0 0;
+  }
+  
+  .ess.rounded-bottom.corner-#{$name}px {
+    border-radius: 0 0 $corner $corner;
+  }
+}

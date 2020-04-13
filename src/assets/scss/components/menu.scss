@@ -1,0 +1,17 @@
+ 
+.ess.menu {
+  float: left;
+  z-index: 9999;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.ess.menu.dark {
+  color: var(--white);
+  background: var(--grey);
+}
+
+.ess.menu.light {
+  color: var(--grey-75);
+  background: var(--white);
+}

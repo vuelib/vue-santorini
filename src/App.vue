@@ -1,7 +1,17 @@
+/* eslint-disable lines-between-class-members */
 <template>
   <div id="app">
-
     <div class="ess container">
+
+      <div class="ess row">
+        <div class="ess col lg-12">
+          <sant-tabs v-model="tab">
+            <sant-tab name="tab1"> Tab 1 </sant-tab>
+            <sant-tab name="tab2"> Tab 2 </sant-tab>
+            <sant-tab name="tab3"> Tab 3 </sant-tab>
+          </sant-tabs>
+        </div>
+      </div>
 
       <div class="ess row">
         <div class="ess col lg-12">
@@ -32,7 +42,9 @@
       </div>
 
     </div>
-
+    <sant-window>
+      dwdwd
+    </sant-window>
   </div>
 </template>
 
@@ -60,25 +72,40 @@
 </style>
 
 <script lang="ts">
+// eslint-disable-next-line lines-between-class-members
 
 import { Component, Vue } from 'vue-property-decorator';
 
 // COMPONENTS
+import SantTab from '@/components/tabs/SantTab.vue';
+import SantTabs from '@/components/tabs/SantTabs.vue';
 import SantButton from '@/components/buttons/SantButton.vue';
 import SantFloatButton from '@/components/buttons/SantFloatButton.vue';
 import SantAvatar from '@/components/avatars/SantAvatar.vue';
 import SantAvatarIcon from '@/components/avatars/SantAvatarIcon.vue';
 import SantBadge from '@/components/badges/SantBadge.vue';
+import SantWindow from '@/components/window/SantWindow.vue';
 
 @Component({
   name: 'App',
   components: {
+    SantTab,
+    SantTabs,
     SantButton,
     SantFloatButton,
     SantAvatar,
     SantAvatarIcon,
     SantBadge,
+    SantWindow,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private tab: string;
+
+  constructor() {
+    super();
+    this.tab = 'tab2';
+  }
+
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="ess card" :class="[theme, canShape, canColor, canShadow]" :style="style">
+  <div class="ess footer">
     <slot></slot>
   </div>
 </template>
@@ -10,7 +10,7 @@ import Component from 'vue-class-component';
 import EssCard from './EssCard';
 
 @Component({
-  name: 'SantCard',
+  name: 'SantCardFooter',
 })
-export default class SantCard extends EssCard {}
+export default class SantCardFooter extends EssCard {}
 </script>

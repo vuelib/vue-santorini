@@ -5,8 +5,14 @@
 |--------------------------------------------------------------------------
 */
 
+@import './utils/colors';
 @import './utils/grid';
+@import './utils/shadows';
+@import './utils/shapes';
+@import './utils/typography';
 @import './utils/variables';
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +20,17 @@
 |--------------------------------------------------------------------------
 */
 
-@import './components/badge.scss';
-@import './components/avatar.scss';
-@import './components/button.scss';
-@import './components/float-button.scss';
+@import './components/avatar';
+@import './components/badge';
+@import './components/button';
+@import './components/card';
+@import './components/float-button';
+@import './components/list';
+@import './components/menu';
+@import './components/separator';
+@import './components/tabs';
+@import './components/text-input';
+@import './components/tooltip';
+
+@import "./components/resizable.scss";
+@import "./components/window.scss";

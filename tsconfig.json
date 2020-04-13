@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "outDir": "build",
     "strict": true,
     "jsx": "preserve",
+    "declaration": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -27,11 +29,12 @@
     ]
   },
   "include": [
+    "vue-santorini.vue",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    // "tests/**/*.ts",
+    // "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"

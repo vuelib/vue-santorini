@@ -7,7 +7,7 @@
 <script lang="ts">
 
 import { Component } from 'vue-property-decorator';
-import EssBadge from '@/components/badges/EssBadge';
+import EssBadge from './EssBadge';
 
 @Component({
   name: 'SantBadge',

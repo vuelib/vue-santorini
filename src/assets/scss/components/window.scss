@@ -1,0 +1,75 @@
+.ess.window {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* float: left; NÃO ESQUECER DE REMOVER */
+  user-select: none;
+  position: absolute;
+  border-radius: 10px;
+  /* transition: all 100ms ease-in; */
+}
+
+.ess.window > .ess.window-header {
+  width: 100%;
+  cursor: move;
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  user-select: none;
+  font-style: normal;
+  /* background: blue; */
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+.ess.window > .ess.window-header > .ess.item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  /* background: tomato; */
+}
+
+.ess.window > .ess.window-header > .ess.item.start {
+  justify-content: flex-start;
+}
+
+.ess.window > .ess.window-header > .ess.item.end {
+  justify-content: flex-end;
+}
+
+.ess.window > .ess.container {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+/* .ess.window > .ess.resizer {
+  right: 0px;
+  bottom: 0px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  cursor: se-resize;
+  position: absolute;
+} */
+
+.ess.window.dark {
+  color: var(--white);
+  background: var(--black);
+}
+
+.ess.window.dark {
+  color: var(--white);
+  background: var(--black);
+}
+
+.ess.window.light {
+  color: var(--grey-75);
+  background: var(--white);
+}
+
+.ess.window.light {
+  color: var(--grey-75);
+  background: var(--white);
+}
