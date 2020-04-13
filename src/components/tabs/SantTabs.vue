@@ -71,6 +71,7 @@ export default class SantTabs extends EssTabs {
    *
    */
   public change(id: string): void {
+    console.log(`T1: ${this.tabs}`);
     const tab: Vue = find(this.tabs, ['id', id]);
 
     super.change(id);
