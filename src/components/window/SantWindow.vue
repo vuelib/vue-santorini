@@ -1,21 +1,19 @@
 <template>
-  <div class="pai">
+  <div
+    :id="`${id}-box`"
+    style="position: absolute; width: 100px; height: 100px; background: white; z-index: 9999; border-radius: 11px;"
+  >
     <div
-      :id="`${id}-box`"
-      style="position: absolute; width: 100px; height: 100px; background: white; z-index: 9999; border-radius: 11px;"
+      :id="`${id}-child`"
+      style="position: relative; background: #222; border-radius: 10px 10px 0 0;
+      width: 100%; height: 40px; cursor: move"
     >
-      <div
-        :id="`${id}-child`"
-        style="position: relative; background: #222; border-radius: 10px 10px 0 0;
-        width: 100%; height: 40px; cursor: move"
-      >
-        <div style="width: 15px; height: 15px; background: #950100; border-radius: 100%; margin: 10px 6px; float: right;"></div>
-        <div style="width: 15px; height: 15px; background: #F2C229; border-radius: 100%; margin: 10px 6px; float: right;"></div>
-        <div style="width: 15px; height: 15px; background: #006300; border-radius: 100%; margin: 10px 6px; float: right;"></div>
-      </div>
-      <div ref="slotContainer">
-        <slot></slot>
-      </div>
+      <div style="width: 15px; height: 15px; background: #950100; border-radius: 100%; margin: 10px 6px; float: right;"></div>
+      <div style="width: 15px; height: 15px; background: #F2C229; border-radius: 100%; margin: 10px 6px; float: right;"></div>
+      <div style="width: 15px; height: 15px; background: #006300; border-radius: 100%; margin: 10px 6px; float: right;"></div>
+    </div>
+    <div ref="slotContainer">
+      <slot></slot>
     </div>
   </div>
 </template>
