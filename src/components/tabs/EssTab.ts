@@ -40,7 +40,6 @@ export default class EssTab extends Vue {
     this.$nextTick(() => {
       this.id = hash();
       this.parent = this.$parent;
-      console.log(this.$parent);
     });
   }
 
@@ -48,7 +47,7 @@ export default class EssTab extends Vue {
    *
    */
   public change(): void {
-    this.parent.change(this.id);
+    this.$parent.change(this.id);
     // this.$emit('changeTab', this.id);
   }
 }
