@@ -13,7 +13,7 @@
     "@popperjs/core": "^2.2.1",
     "@types/lodash": "^4.14.149",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "random-hash": "^4.0.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
