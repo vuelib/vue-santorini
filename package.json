@@ -1,60 +1,41 @@
 {
-  "name": "@essencia-ui/vue-santorini",
+  "private": false,
   "version": "0.1.0",
-  "private": true,
-  "main": "vue-santorini.js",
+  "name": "@essencia-ui/vue-santorini",
+  "main": "dist/essencia-santorini.common.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:webpack": "webpack --config ./webpack.config.js -p"
+    "build:lib": "vue-cli-service build --target lib --name essencia-santorini ./src/main.ts",
+    "build:scss": "node-sass --output-style expanded src/sass/style.scss dist/essencia-santorini.css",
+    "build": "npm run lint && npm run build:lib && npm run build:scss"
   },
   "dependencies": {
-    "@popperjs/core": "^2.2.1",
-    "@types/lodash": "^4.14.149",
-    "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
-    "random-hash": "^4.0.1",
-    "register-service-worker": "^1.6.2",
+    "core-js": "^3.6.5",
+    "spinkit": "^2.0.1",
     "vue": "^2.6.11",
-    "vue-class-component": "^7.2.2",
-    "vue-property-decorator": "^8.3.0"
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.8.3",
-    "@types/lodash": "^4.14.149",
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
-    "@vue/cli-plugin-babel": "~4.2.0",
-    "@vue/cli-plugin-eslint": "~4.2.0",
-    "@vue/cli-plugin-pwa": "~4.2.0",
-    "@vue/cli-plugin-typescript": "~4.2.0",
-    "@vue/cli-service": "~4.2.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
-    "@vue/eslint-config-typescript": "^5.0.1",
-    "babel-loader": "^8.1.0",
-    "babel-preset-typescript-vue": "^1.0.3",
+    "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-vue": "^6.1.2",
-    "lint-staged": "^9.5.0",
-    "sass": "^1.25.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "tslint-loader": "^3.5.4",
-    "typescript": "~3.7.5",
-    "vue-loader": "^15.9.1",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.41.6",
-    "webpack-cli": "3.1.0",
-    "webpack-dev-server": "^3.1.14"
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
+  "files": [
+    "src",
+    "dist/*.{js,css}"
+  ]
 }

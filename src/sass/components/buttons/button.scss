@@ -1,0 +1,212 @@
+button.ess,
+submit.ess,
+input[type=reset].ess,
+input[type=button].ess,
+input[type=submit].ess {
+  margin: 0;
+  width: auto;
+  height: auto;
+  border: none;
+  font: inherit;
+  outline: none;
+  color: $white;
+  line-height: 0;
+  padding: 0 20px;
+  min-width: 64px;
+  cursor: pointer;
+  font-size: 14px;
+  min-height: 36px;
+  font-weight: 500;
+  overflow: visible;
+  user-select: none;
+  background: $blue;
+  border-radius: 6px;
+  line-height: normal;
+  vertical-align: baseline;
+  transition: all 300ms ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+button.ess:disabled,
+submit.ess:disabled,
+input[type=reset].ess:disabled,
+input[type=button].ess:disabled,
+input[type=submit].ess:disabled {
+  cursor: not-allowed;
+}
+
+button.ess.filled,
+submit.ess.filled,
+input[type=reset].ess.filled,
+input[type=button].ess.filled,
+input[type=submit].ess.filled {
+  color: $white;
+  background: $blue;
+}
+
+button.ess.filled:disabled,
+submit.ess.filled:disabled,
+input[type=reset].ess.filled:disabled,
+input[type=button].ess.filled:disabled,
+input[type=submit].ess.filled:disabled {
+  color: $grey-45;
+  background: $grey-15;
+}
+
+button.ess.filled:hover,
+submit.ess.filled:hover,
+input[type=reset].ess.filled:hover,
+input[type=button].ess.filled:hover,
+input[type=submit].ess.filled:hover {
+  background: darken($blue, 10%);
+}
+
+button.ess.filled:disabled:hover,
+submit.ess.filled:disabled:hover,
+input[type=reset].ess.filled:disabled:hover,
+input[type=button].ess.filled:disabled:hover,
+input[type=submit].ess.filled:disabled:hover {
+  color: $grey-45;
+  background: $grey-15;
+}
+
+button.ess.outlined,
+submit.ess.outlined,
+input[type=reset].ess.outlined,
+input[type=button].ess.outlined,
+input[type=submit].ess.outlined {
+  color: $blue;
+  border: 1px solid $blue;
+  background: transparent;
+}
+
+button.ess.outlined:disabled,
+submit.ess.outlined:disabled,
+input[type=reset].ess.outlined:disabled,
+input[type=button].ess.outlined:disabled,
+input[type=submit].ess.outlined:disabled {
+  color: $grey-45;
+  border: 1px solid $grey-15;
+  background: transparent;
+}
+
+button.ess.outlined:hover,
+submit.ess.outlined:hover,
+input[type=reset].ess.outlined:hover,
+input[type=button].ess.outlined:hover,
+input[type=submit].ess.outlined:hover {
+  color: $white;
+  background: $blue;
+  border: 1px solid $blue;
+}
+
+button.ess.outlined:disabled:hover,
+submit.ess.outlined:disabled:hover,
+input[type=reset].ess.outlined:disabled:hover,
+input[type=button].ess.outlined:disabled:hover,
+input[type=submit].ess.outlined:disabled:hover {
+  color: $grey-45;
+  border: 1px solid $grey-15;
+  background: transparent;
+}
+
+button.ess.cleaned,
+submit.ess.cleaned,
+input[type=reset].ess.cleaned,
+input[type=button].ess.cleaned,
+input[type=submit].ess.cleaned {
+  color: $blue;
+  background: transparent;
+}
+
+button.ess.cleaned:disabled,
+submit.ess.cleaned:disabled,
+input[type=reset].ess.cleaned:disabled,
+input[type=button].ess.cleaned:disabled,
+input[type=submit].ess.cleaned:disabled {
+  color: $grey-45;
+  background: transparent;
+}
+
+button.ess.cleaned:hover,
+submit.ess.cleaned:hover,
+input[type=reset].ess.cleaned:hover,
+input[type=button].ess.cleaned:hover,
+input[type=submit].ess.cleaned:hover {
+  color: $blue;
+  background: rgba($blue, 0.2);
+}
+
+button.ess.cleaned:disabled:hover,
+submit.ess.cleaned:disabled:hover,
+input[type=reset].ess.cleaned:disabled:hover,
+input[type=button].ess.cleaned:disabled:hover,
+input[type=submit].ess.cleaned:disabled:hover {
+  color: $grey-45;
+  background: transparent;
+}
+
+button.ess.rounded,
+submit.ess.rounded,
+input[type=reset].ess.rounded,
+input[type=button].ess.rounded,
+input[type=submit].ess.rounded {
+  border-radius: 6px;
+}
+
+button.ess.pill,
+submit.ess.pill,
+input[type=reset].ess.pill,
+input[type=button].ess.pill,
+input[type=submit].ess.pill {
+  border-radius: 999px;
+}
+
+// @each $shape, $value in $button-shape {
+
+//   button.ess.#{$shape},
+//   submit.ess.#{$shape},
+//   input[type=reset].ess.#{$shape},
+//   input[type=button].ess.#{$shape},
+//   input[type=submit].ess.#{$shape} {
+//     border-radius: map-get($value, 'corner');
+//   }
+// }
+
+// @each $color, $value in $colors {
+
+//   button.ess.filled.#{$color},
+//   submit.ess.filled.#{$color},
+//   input[type=reset].ess.filled.#{$color},
+//   input[type=button].ess.filled.#{$color},
+//   input[type=submit].ess.filled.#{$color} {
+//     color: map-get($value, 'font');
+//     background: map-get($value, 'base');
+//   }
+  
+//   button.ess.filled.#{$color}:hover,
+//   submit.ess.filled.#{$color}:hover,
+//   input[type=reset].ess.filled.#{$color}:hover,
+//   input[type=button].ess.filled.#{$color}:hover,
+//   input[type=submit].ess.filled.#{$color}:hover {
+//     background: darken(map-get($value, 'base'), 5%);
+//   }
+
+//   button.ess.cleaned.#{$color},
+//   submit.ess.cleaned.#{$color},
+//   input[type=reset].ess.cleaned.#{$color},
+//   input[type=button].ess.cleaned.#{$color},
+//   input[type=submit].ess.cleaned.#{$color} {
+//     background: transparent;
+//     color: map-get($value, 'base');
+//   }
+  
+//   button.ess.cleaned.#{$color}:hover,
+//   submit.ess.cleaned.#{$color}:hover,
+//   input[type=reset].ess.cleaned.#{$color}:hover,
+//   input[type=button].ess.cleaned.#{$color}:hover,
+//   input[type=submit].ess.cleaned.#{$color}:hover {
+//     color: map-get($value, 'base');
+//     background: rgba(map-get($value, 'base'), 0.1);
+//   }
+// }

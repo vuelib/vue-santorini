@@ -1,50 +1,20 @@
-import Vue from 'vue';
-import App from './App.vue';
-import './registerServiceWorker';
+import EssButton from './components/buttons/EssButton.vue';
 
-Vue.config.productionTip = false;
+const Components: any = {
+  EssButton,
+};
 
-new Vue({
-  render: (h) => h(App),
-}).$mount('#app');
+const Install: any = (Vue: any, options: any = {}) => {
 
-// import SantAvatar from './components/avatars/SantAvatar.vue';
-// import SantAvatarIcon from './components/avatars/SantAvatarIcon.vue';
-// import SantBadge from './components/badges/SantBadge.vue';
-// import SantButton from './components/buttons/SantButton.vue';
-// import SantFloatButton from './components/buttons/SantFloatButton.vue';
-// import SantCard from './components/cards/SantCard.vue';
-// import SantCardHeader from './components/cards/SantCardHeader.vue';
-// import SantCardContent from './components/cards/SantCardContent.vue';
-// import SantCardFooter from './components/cards/SantCardFooter.vue';
-// import SantList from './components/lists/SantList.vue';
-// import SantListItem from './components/lists/SantListItem.vue';
-// import SantTab from './components/tabs/SantTab.vue';
-// import SantTabs from './components/tabs/SantTabs.vue';
+  Object.keys(Components).forEach((component) => {
+    Vue.component(component, Components[component]);
+  });
+};
 
-// const components = [
-//   SantAvatar,
-//   SantAvatarIcon,
-//   SantBadge,
-//   SantButton,
-//   SantFloatButton,
-//   SantCard,
-//   SantCardHeader,
-//   SantCardContent,
-//   SantCardFooter,
-//   SantList,
-//   SantListItem,
-//   SantTab,
-//   SantTabs,
-// ];
+// auto install
+if (typeof window !== 'undefined' && window.Vue) {
 
-// const Components = {
-//   install(Vue: any) {
-//     // eslint-disable-next-line array-callback-return
-//     components.map((component) => {
-//       Vue.component(component.name, component);
-//     });
-//   },
-// };
+  Install(window.Vue);
+}
 
-// export default Components;
+export default Install;

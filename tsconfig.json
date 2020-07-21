@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "sourceMap": true,
     "target": "esnext",
     "module": "esnext",
-    "outDir": "build",
-    "strict": true,
-    "jsx": "preserve",
-    "declaration": true,
     "importHelpers": true,
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
     "types": [
       "webpack-env"
     ],
@@ -29,12 +27,11 @@
     ]
   },
   "include": [
-    "vue-santorini.vue",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    // "tests/**/*.ts",
-    // "tests/**/*.tsx"
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"

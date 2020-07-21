@@ -1,0 +1,45 @@
+/*
+|--------------------------------------------------------------------------
+| WEB
+|--------------------------------------------------------------------------
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*
+|--------------------------------------------------------------------------
+| UTILS
+|--------------------------------------------------------------------------
+*/
+
+@import './utils/colors.scss';
+@import './utils/typography.scss';
+
+/*
+|--------------------------------------------------------------------------
+| COMPONENTS
+|--------------------------------------------------------------------------
+*/
+
+@import './components/buttons/button.scss';
+
+/*
+|--------------------------------------------------------------------------
+| CONFIGS
+|--------------------------------------------------------------------------
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
