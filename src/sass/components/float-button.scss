@@ -1,0 +1,180 @@
+button.ess.float,
+submit.ess.float,
+input[type=reset].ess.float,
+input[type=button].ess.float,
+input[type=submit].ess.float {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  border: none;
+  font: inherit;
+  outline: none;
+  line-height: 0;
+  cursor: pointer;
+  font-size: 22px;
+  min-width: 42px;
+  max-width: 52px;
+  min-height: 42px;
+  max-height: 52px;
+  overflow: visible;
+  user-select: none;
+  line-height: normal;
+  vertical-align: baseline;
+  transition: all 300ms ease-in-out;
+}
+
+button.ess.float.small,
+submit.ess.float.small,
+input[type=reset].ess.float.small,
+input[type=button].ess.float.small,
+input[type=submit].ess.float.small {
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+}
+
+button.ess.float.big,
+submit.ess.float.big,
+input[type=reset].ess.float.big,
+input[type=button].ess.float.big,
+input[type=submit].ess.float.big {
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+}
+
+button.ess.float.rounded,
+submit.ess.float.rounded,
+input[type=reset].ess.float.rounded,
+input[type=button].ess.float.rounded,
+input[type=submit].ess.float.rounded {
+  border-radius: 6px;
+}
+
+button.ess.float.circle,
+submit.ess.float.circle,
+input[type=reset].ess.float.circle,
+input[type=button].ess.float.circle,
+input[type=submit].ess.float.circle {
+  border-radius: 999px;
+}
+
+button.ess.float:disabled,
+submit.ess.float:disabled,
+input[type=reset].ess.float:disabled,
+input[type=button].ess.float:disabled,
+input[type=submit].ess.float:disabled {
+  cursor: not-allowed;
+}
+
+button.ess.float.filled,
+submit.ess.float.filled,
+input[type=reset].ess.float.filled,
+input[type=button].ess.float.filled,
+input[type=submit].ess.float.filled {
+  color: #fff;
+  background: $blue;
+}
+
+button.ess.float.filled:disabled,
+submit.ess.float.filled:disabled,
+input[type=reset].ess.float.filled:disabled,
+input[type=button].ess.float.filled:disabled,
+input[type=submit].ess.float.filled:disabled {
+  color: $grey-45;
+  background: $grey-15;
+}
+
+button.ess.float.filled:hover,
+submit.ess.float.filled:hover,
+input[type=reset].ess.float.filled:hover,
+input[type=button].ess.float.filled:hover,
+input[type=submit].ess.float.filled:hover {
+  background: darken($blue, 10%);
+}
+
+button.ess.float.filled:disabled:hover,
+submit.ess.float.filled:disabled:hover,
+input[type=reset].ess.float.filled:disabled:hover,
+input[type=button].ess.float.filled:disabled:hover,
+input[type=submit].ess.float.filled:disabled:hover {
+  color: $grey-45;
+  background: $grey-15;
+}
+
+button.ess.float.outlined,
+submit.ess.float.outlined,
+input[type=reset].ess.float.outlined,
+input[type=button].ess.float.outlined,
+input[type=submit].ess.float.outlined {
+  color: $blue;
+  border: 1px solid $blue;
+  background: transparent;
+}
+
+button.ess.float.outlined:disabled,
+submit.ess.float.outlined:disabled,
+input[type=reset].ess.float.outlined:disabled,
+input[type=button].ess.float.outlined:disabled,
+input[type=submit].ess.float.outlined:disabled {
+  color: $grey-45;
+  border: 1px solid $grey-15;
+  background: transparent;
+}
+
+button.ess.float.outlined:hover,
+submit.ess.float.outlined:hover,
+input[type=reset].ess.float.outlined:hover,
+input[type=button].ess.float.outlined:hover,
+input[type=submit].ess.float.outlined:hover {
+  color: #fff;
+  background: $blue;
+  border: 1px solid $blue;
+}
+
+button.ess.float.outlined:disabled:hover,
+submit.ess.float.outlined:disabled:hover,
+input[type=reset].ess.float.outlined:disabled:hover,
+input[type=button].ess.float.outlined:disabled:hover,
+input[type=submit].ess.float.outlined:disabled:hover {
+  color: $grey-45;
+  border: 1px solid $grey-15;
+  background: transparent;
+}
+
+button.ess.float.cleaned,
+submit.ess.float.cleaned,
+input[type=reset].ess.float.cleaned,
+input[type=button].ess.float.cleaned,
+input[type=submit].ess.float.cleaned {
+  color: $blue;
+  background: transparent;
+}
+
+button.ess.float.cleaned:disabled,
+submit.ess.float.cleaned:disabled,
+input[type=reset].ess.float.cleaned:disabled,
+input[type=button].ess.float.cleaned:disabled,
+input[type=submit].ess.float.cleaned:disabled {
+  color: $grey-45;
+  background: transparent;
+}
+
+button.ess.float.cleaned:hover,
+submit.ess.float.cleaned:hover,
+input[type=reset].ess.float.cleaned:hover,
+input[type=button].ess.float.cleaned:hover,
+input[type=submit].ess.float.cleaned:hover {
+  color: $blue;
+  background: rgba($blue, 0.2);
+}
+
+button.ess.float.cleaned:disabled:hover,
+submit.ess.float.cleaned:disabled:hover,
+input[type=reset].ess.float.cleaned:disabled:hover,
+input[type=button].ess.float.cleaned:disabled:hover,
+input[type=submit].ess.float.cleaned:disabled:hover {
+  color: $grey-45;
+  background: transparent;
+}

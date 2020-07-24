@@ -5,6 +5,7 @@
 */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 /*
@@ -22,7 +23,11 @@
 |--------------------------------------------------------------------------
 */
 
-@import './components/buttons/button.scss';
+@import './components/button.scss';
+@import './components/switch.scss';
+@import './components/checkbox.scss';
+@import './components/text-input.scss';
+@import './components/float-button.scss';
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +43,7 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', sans-serif;

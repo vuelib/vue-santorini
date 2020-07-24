@@ -1,0 +1,109 @@
+.ess.checkbox {
+  float: left;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.ess.checkbox > input[type=checkbox].ess {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.ess.checkbox > .ess.checkmark {
+  float: left;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  border-radius: 4px;
+  background: $grey-30;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.ess.checkbox > .ess.checkmark:after {
+  top: 0px;
+  left: 0px;
+  width: 9px;
+  opacity: 0;
+  content: "";
+  height: 15px;
+  display: block;
+  position: absolute;
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  transform: translate(0) rotate(0deg);
+  -ms-transform: translate(0) rotate(0deg);
+  -webkit-transform: translate(0) rotate(0deg);
+  transition: 100ms all ease-in;
+}
+
+.ess.checkbox > .ess.ripple {
+  float: left;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.ess.checkbox > input[type=checkbox].ess:disabled ~ .ess.checkmark {
+  background: $grey-15;
+}
+
+.ess.checkbox > input[type=checkbox].ess:disabled ~ .ess.label.ess.checkbox {
+  color: $grey-60;
+}
+
+.ess.checkbox > input[type=checkbox].ess:disabled:checked ~ .ess.checkmark {
+  opacity: 0.5;
+}
+
+.ess.checkbox > input[type=checkbox].ess:checked ~ .ess.checkmark {
+  background: $blue;
+}
+
+.ess.checkbox > input[type=checkbox].ess:checked ~ .ess.checkmark:after {
+  opacity: 1;
+  transform: translate(10px) rotate(45deg);
+  -ms-transform: translate(10px) rotate(45deg);
+  -webkit-transform: translate(10px) rotate(45deg);
+}
+
+.ess.checkbox > .ess.ripple::before {
+  opacity: 1;
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid $blue;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.ess.checkbox > input[type="checkbox"].ess:checked ~ .ess.ripple::before {
+  opacity: 0;
+  z-index: 999;
+  border-radius: 5px;
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+}

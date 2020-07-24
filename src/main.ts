@@ -1,7 +1,15 @@
-import EssButton from './components/buttons/EssButton.vue';
+import EssButton from './components/EssButton.vue';
+import EssSwitch from './components/EssSwitch.vue';
+import EssCheckbox from './components/EssCheckbox.vue';
+import EssTextInput from './components/EssTextInput.vue';
+import EssFloatButton from './components/EssFloatButton.vue';
 
 const Components: any = {
   EssButton,
+  EssSwitch,
+  EssCheckbox,
+  EssTextInput,
+  EssFloatButton,
 };
 
 const Install: any = (Vue: any, options: any = {}) => {

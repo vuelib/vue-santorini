@@ -1,0 +1,131 @@
+input[type=tel].ess,
+input[type=url].ess,
+input[type=text].ess,
+input[type=date].ess,
+input[type=time].ess,
+input[type=week].ess,
+input[type=email].ess,
+input[type=month].ess,
+input[type=number].ess,
+input[type=search].ess,
+input[type=password].ess,
+input[type=datetime-local].ess {
+  margin: 0;
+  width: 100%;
+  border: none;
+  color: $grey;
+  outline: none;
+  font-size: 14px;
+  min-height: 36px;
+  max-height: 36px;
+  appearance: none;
+  font-weight: 400;
+  padding: 0px 16px;
+  overflow: visible;
+  border-radius: 6px;
+  position: relative;
+  text-align: justify;
+  line-height: normal;
+  background: transparent;
+  border: 1px solid $grey-30;
+  transition: 300ms all ease-in;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type=tel].ess::placeholder,
+input[type=url].ess::placeholder,
+input[type=text].ess::placeholder,
+input[type=date].ess::placeholder,
+input[type=time].ess::placeholder,
+input[type=week].ess::placeholder,
+input[type=email].ess::placeholder,
+input[type=month].ess::placeholder,
+input[type=number].ess::placeholder,
+input[type=search].ess::placeholder,
+input[type=password].ess::placeholder,
+input[type=datetime-local].ess::placeholder {
+  color: $grey-45;
+  font-size: 14px;
+  transition: 100ms all ease-in;
+}
+
+input[type=tel].ess:disabled,
+input[type=url].ess:disabled,
+input[type=text].ess:disabled,
+input[type=date].ess:disabled,
+input[type=time].ess:disabled,
+input[type=week].ess:disabled,
+input[type=email].ess:disabled,
+input[type=month].ess:disabled,
+input[type=number].ess:disabled,
+input[type=search].ess:disabled,
+input[type=password].ess:disabled,
+input[type=datetime-local].ess:disabled {
+  color: $grey-45;
+  user-select: none;
+  cursor: not-allowed;
+  background: $grey-15;
+  border: 1px solid $grey-15;
+}
+
+input[type=tel].ess:focus,
+input[type=url].ess:focus,
+input[type=text].ess:focus,
+input[type=date].ess:focus,
+input[type=time].ess:focus,
+input[type=week].ess:focus,
+input[type=email].ess:focus,
+input[type=month].ess:focus,
+input[type=number].ess:focus,
+input[type=search].ess:focus,
+input[type=password].ess:focus,
+input[type=datetime-local].ess:focus {
+  border: 1px solid $blue;
+}
+
+input[type=tel].ess:focus::placeholder,
+input[type=url].ess:focus::placeholder,
+input[type=text].ess:focus::placeholder,
+input[type=date].ess:focus::placeholder,
+input[type=time].ess:focus::placeholder,
+input[type=week].ess:focus::placeholder,
+input[type=email].ess:focus::placeholder,
+input[type=month].ess:focus::placeholder,
+input[type=number].ess:focus::placeholder,
+input[type=search].ess:focus::placeholder,
+input[type=password].ess:focus::placeholder,
+input[type=datetime-local].ess:focus::placeholder {
+  font-size: 12px;
+}
+
+input[type=tel].ess.rounded,
+input[type=url].ess.rounded,
+input[type=text].ess.rounded,
+input[type=date].ess.rounded,
+input[type=time].ess.rounded,
+input[type=week].ess.rounded,
+input[type=email].ess.rounded,
+input[type=month].ess.rounded,
+input[type=number].ess.rounded,
+input[type=search].ess.rounded,
+input[type=password].ess.rounded,
+input[type=datetime-local].ess.rounded {
+  border-radius: 6px;
+}
+
+input[type=tel].ess.pill,
+input[type=url].ess.pill,
+input[type=text].ess.pill,
+input[type=date].ess.pill,
+input[type=time].ess.pill,
+input[type=week].ess.pill,
+input[type=email].ess.pill,
+input[type=month].ess.pill,
+input[type=number].ess.pill,
+input[type=search].ess.pill,
+input[type=password].ess.pill,
+input[type=datetime-local].ess.pill {
+  border-radius: 999px;
+}

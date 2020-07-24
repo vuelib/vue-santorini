@@ -5,11 +5,11 @@ input[type=button].ess,
 input[type=submit].ess {
   margin: 0;
   width: auto;
+  float: left;
   height: auto;
   border: none;
   font: inherit;
   outline: none;
-  color: $white;
   line-height: 0;
   padding: 0 20px;
   min-width: 64px;
@@ -19,12 +19,28 @@ input[type=submit].ess {
   font-weight: 500;
   overflow: visible;
   user-select: none;
-  background: $blue;
+  position: relative;
   border-radius: 6px;
   line-height: normal;
   vertical-align: baseline;
   transition: all 300ms ease-in-out;
   font-family: 'Poppins', sans-serif;
+}
+
+button.ess.rounded,
+submit.ess.rounded,
+input[type=reset].ess.rounded,
+input[type=button].ess.rounded,
+input[type=submit].ess.rounded {
+  border-radius: 6px;
+}
+
+button.ess.pill,
+submit.ess.pill,
+input[type=reset].ess.pill, 
+input[type=button].ess.pill, 
+input[type=submit].ess.pill {
+  border-radius: 999px;
 }
 
 button.ess:disabled,
@@ -144,22 +160,6 @@ input[type=button].ess.cleaned:disabled:hover,
 input[type=submit].ess.cleaned:disabled:hover {
   color: $grey-45;
   background: transparent;
-}
-
-button.ess.rounded,
-submit.ess.rounded,
-input[type=reset].ess.rounded,
-input[type=button].ess.rounded,
-input[type=submit].ess.rounded {
-  border-radius: 6px;
-}
-
-button.ess.pill,
-submit.ess.pill,
-input[type=reset].ess.pill,
-input[type=button].ess.pill,
-input[type=submit].ess.pill {
-  border-radius: 999px;
 }
 
 // @each $shape, $value in $button-shape {
