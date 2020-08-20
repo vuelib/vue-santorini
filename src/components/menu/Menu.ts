@@ -3,9 +3,9 @@ import { createPopper } from '@popperjs/core';
 import { Component, Prop } from 'vue-property-decorator';
 
 @Component({
-  name: 'EssMenu',
+  name: 'Menu',
 })
-export default class EssMenu extends Vue {
+export default class Menu extends Vue {
   private fadeIn: boolean;
 
   private menuVisible: boolean;

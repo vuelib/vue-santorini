@@ -11,10 +11,10 @@
 
 <script lang="ts">
 import Component from 'vue-class-component';
-import EssInput from './EssInput';
+import Input from './Input';
 
 Component({
-  name: 'SantInput',
+  name: 'EssInput',
 });
-export default class SantInput extends EssInput {}
+export default class EssInput extends Input {}
 </script>

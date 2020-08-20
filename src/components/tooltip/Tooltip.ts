@@ -2,9 +2,9 @@ import Vue from 'vue';
 import { createPopper } from '@popperjs/core';
 import { Component, Prop } from 'vue-property-decorator';
 @Component({
-  name: 'EssTooltip',
+  name: 'Tooltip',
 })
-export default class EssTooltip extends Vue {
+export default class Tooltip extends Vue {
   private fadeIn: boolean;
 
   private menuVisible: boolean;

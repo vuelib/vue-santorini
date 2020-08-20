@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 @Component({
-  name: 'EssSeparator',
+  name: 'Separator',
 })
-export default class EssSeparator extends Vue {
+export default class Separator extends Vue {
   @Prop({ default: 'light' })
   theme!: string;
 

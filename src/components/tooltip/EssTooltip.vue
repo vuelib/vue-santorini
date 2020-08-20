@@ -6,10 +6,10 @@
 
 <script lang="ts">
 import Component from 'vue-class-component';
-import EssTooltip from './EssTooltip';
+import Tooltip from './Tooltip';
 
 Component({
-  name: 'SantTooltipo',
+  name: 'EssTooltipo',
 });
-export default class SantTooltip extends EssTooltip {}
+export default class EssTooltip extends Tooltip {}
 </script>

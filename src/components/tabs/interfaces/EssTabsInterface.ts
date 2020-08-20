@@ -1,5 +1,5 @@
 /* eslint-disable semi */
-export default interface EssTabInterface {
+export default interface TabInterface {
   // currentTab: number;
   // tabs: Array<Object>;
 

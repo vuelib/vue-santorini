@@ -1,9 +1,9 @@
 
-interface EssTabInterface {
+interface TabInterface {
   id: string;
   name: string;
 
   changeTab(): void;
 }
 
-export default EssTabInterface;
+export default TabInterface;

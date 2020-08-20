@@ -9,10 +9,10 @@
 /* eslint-disable lines-between-class-members */
 
 import { Component } from 'vue-property-decorator';
-import EssList from './EssList';
+import List from './List';
 
 @Component({
-  name: 'SantList',
+  name: 'EssList',
 })
-export default class SantList extends EssList {}
+export default class EssList extends List {}
 </script>

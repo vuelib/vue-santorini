@@ -15,13 +15,13 @@ import { Component, Prop } from 'vue-property-decorator';
 import { find } from 'lodash';
 
 @Component({
-  name: 'SantTabs',
+  name: 'EssTabs',
   model: {
     prop: 'value',
     event: 'input',
   },
 })
-export default class SantTabs extends Vue {
+export default class EssTabs extends Vue {
   @Prop({ default: true })
   value!: string;
 

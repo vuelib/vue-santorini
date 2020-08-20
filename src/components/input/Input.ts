@@ -2,9 +2,9 @@ import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
 @Component({
-  name: 'EssInput',
+  name: 'Input',
 })
-export default class EssInput extends Vue {
+export default class Input extends Vue {
   @Prop()
   id!: string;
 
@@ -28,4 +28,7 @@ export default class EssInput extends Vue {
 
   @Prop()
   color!: string;
+
+  @Prop()
+  label!: string;
 }

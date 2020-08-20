@@ -7,10 +7,10 @@
 <script lang="ts">
 
 import { Component } from 'vue-property-decorator';
-import EssButton from './EssButton';
+import Button from './Button';
 
 @Component({
-  name: 'SantButton',
+  name: 'EssButton',
 })
-export default class SantButton extends EssButton {}
+export default class EssButton extends Button {}
 </script>

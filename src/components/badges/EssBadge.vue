@@ -7,10 +7,10 @@
 <script lang="ts">
 
 import { Component } from 'vue-property-decorator';
-import EssBadge from './EssBadge';
+import Badge from './Badge';
 
 @Component({
-  name: 'SantBadge',
+  name: 'EssBadge',
 })
-export default class SantBadge extends EssBadge {}
+export default class EssBadge extends Badge {}
 </script>

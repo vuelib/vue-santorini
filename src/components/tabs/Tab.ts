@@ -3,9 +3,9 @@ import hash from 'random-hash';
 import { Component, Prop } from 'vue-property-decorator';
 
 @Component({
-  name: 'EssTab',
+  name: 'Tab',
 })
-export default class EssTab extends Vue {
+export default class Tab extends Vue {
 
   /**
    *
@@ -47,7 +47,8 @@ export default class EssTab extends Vue {
    *
    */
   public change(): void {
-    this.$parent.change(this.id);
+    const bypass: any = this.$parent;
+    bypass.change(this.id);
     // this.$emit('changeTab', this.id);
   }
 }

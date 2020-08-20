@@ -7,10 +7,10 @@
 <script lang="ts">
 /* eslint-disable lines-between-class-members */
 import Component from 'vue-class-component';
-import EssCard from './EssCard';
+import Card from './Card';
 
 @Component({
-  name: 'SantCardContent',
+  name: 'EssCardContent',
 })
-export default class SantCardContent extends EssCard {}
+export default class EssCardContent extends Card {}
 </script>

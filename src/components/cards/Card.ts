@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Prop } from 'vue-property-decorator';
 
-export default class EssCard extends Vue {
+export default class Card extends Vue {
   @Prop({ default: 'light' })
   protected theme!: string;
 

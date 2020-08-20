@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Prop } from 'vue-property-decorator';
 
-export default class EssAvatar extends Vue {
+export default class Avatar extends Vue {
   /**
    *
    */

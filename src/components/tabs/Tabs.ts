@@ -3,9 +3,9 @@ import { find } from 'lodash';
 import { Component, Prop } from 'vue-property-decorator';
 
 @Component({
-  name: 'EssTabs',
+  name: 'Tabs',
 })
-export default class EssTabs extends Vue {
+export default class Tabs extends Vue {
   /**
    *
    */

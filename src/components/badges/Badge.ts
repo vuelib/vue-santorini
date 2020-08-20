@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Prop } from 'vue-property-decorator';
 
-export default class EssBadge extends Vue {
+export default class Badge extends Vue {
   /**
    *
    */

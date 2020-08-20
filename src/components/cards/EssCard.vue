@@ -1,5 +1,5 @@
 <template>
-  <div class="ess footer">
+  <div class="ess card" :class="[theme, canShape, canColor, canShadow]" :style="style">
     <slot></slot>
   </div>
 </template>
@@ -7,10 +7,10 @@
 <script lang="ts">
 /* eslint-disable lines-between-class-members */
 import Component from 'vue-class-component';
-import EssCard from './EssCard';
+import Card from './Card';
 
 @Component({
-  name: 'SantCardFooter',
+  name: 'EssCard',
 })
-export default class SantCardFooter extends EssCard {}
+export default class EssCard extends Card {}
 </script>

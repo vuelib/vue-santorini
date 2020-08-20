@@ -6,10 +6,10 @@
 
 <script lang="ts">
 import { Component } from 'vue-property-decorator';
-import EssAvatar from './EssAvatar';
+import Avatar from './Avatar';
 
 @Component({
-  name: 'SantAvatarIcon',
+  name: 'EssAvatarIcon',
 })
-export default class SantAvatarIcon extends EssAvatar {}
+export default class EssAvatarIcon extends Avatar {}
 </script>

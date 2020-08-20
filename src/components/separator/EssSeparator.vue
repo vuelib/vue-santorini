@@ -4,10 +4,10 @@
 
 <script lang="ts">
 import Component from 'vue-class-component';
-import EssSeparator from './EssSeparator';
+import Separator from './Separator';
 
 Component({
-  name: 'SantSeparator',
+  name: 'EssSeparator',
 });
-export default class SantSeparator extends EssSeparator {}
+export default class EssSeparator extends Separator {}
 </script>

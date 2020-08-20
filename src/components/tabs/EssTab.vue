@@ -16,9 +16,9 @@ import { Component, Prop } from 'vue-property-decorator';
 import hash from 'random-hash';
 
 @Component({
-  name: 'SantTab',
+  name: 'EssTab',
 })
-export default class SantTab extends Vue {
+export default class EssTab extends Vue {
   @Prop({ default: '' })
   name!: string;
 

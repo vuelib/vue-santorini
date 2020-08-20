@@ -8,10 +8,10 @@
 // eslint-disable-next-line import/no-self-import
 import Component from 'vue-class-component';
 // eslint-disable-next-line import/extensions
-import EssMenu from './EssMenu';
+import Menu from './Menu';
 
 Component({
-  name: 'SantMenu',
+  name: 'EssMenu',
 });
-export default class SantMenu extends EssMenu {}
+export default class EssMenu extends Menu {}
 </script>

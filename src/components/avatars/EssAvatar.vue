@@ -4,10 +4,10 @@
 
 <script lang="ts">
 import { Component } from 'vue-property-decorator';
-import EssAvatar from './EssAvatar';
+import Avatar from './Avatar';
 
 @Component({
-  name: 'SantAvatar',
+  name: 'EssAvatar',
 })
-export default class SantAvatar extends EssAvatar {}
+export default class EssAvatar extends Avatar {}
 </script>

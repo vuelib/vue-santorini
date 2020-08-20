@@ -77,26 +77,26 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 // COMPONENTS
-import SantTab from '@/components/tabs/SantTab.vue';
-import SantTabs from '@/components/tabs/SantTabs.vue';
-import SantButton from '@/components/buttons/SantButton.vue';
-import SantFloatButton from '@/components/buttons/SantFloatButton.vue';
-import SantAvatar from '@/components/avatars/SantAvatar.vue';
-import SantAvatarIcon from '@/components/avatars/SantAvatarIcon.vue';
-import SantBadge from '@/components/badges/SantBadge.vue';
-import SantWindow from '@/components/window/SantWindow.vue';
+import EssTab from '@/components/tabs/EssTab.vue';
+import EssTabs from '@/components/tabs/EssTabs.vue';
+import EssButton from '@/components/buttons/EssButton.vue';
+import EssFloatButton from '@/components/buttons/EssFloatButton.vue';
+import EssAvatar from '@/components/avatars/EssAvatar.vue';
+import EssAvatarIcon from '@/components/avatars/EssAvatarIcon.vue';
+import EssBadge from '@/components/badges/EssBadge.vue';
+import EssWindow from '@/components/window/EssWindow.vue';
 
 @Component({
   name: 'App',
   components: {
-    SantTab,
-    SantTabs,
-    SantButton,
-    SantFloatButton,
-    SantAvatar,
-    SantAvatarIcon,
-    SantBadge,
-    SantWindow,
+    EssTab,
+    EssTabs,
+    EssButton,
+    EssFloatButton,
+    EssAvatar,
+    EssAvatarIcon,
+    EssBadge,
+    EssWindow,
   },
 })
 export default class App extends Vue {

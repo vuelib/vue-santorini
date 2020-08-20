@@ -1,43 +1,43 @@
-import SantAvatar from './src/components/avatars/SantAvatar.vue';
-import SantAvatarIcon from './src/components/avatars/SantAvatarIcon.vue';
-import SantBadge from './src/components/badges/SantBadge.vue';
-import SantButton from './src/components/buttons/SantButton.vue';
-import SantFloatButton from './src/components/buttons/SantFloatButton.vue';
-import SantCard from './src/components/cards/SantCard.vue';
-import SantCardHeader from './src/components/cards/SantCardHeader.vue';
-import SantCardContent from './src/components/cards/SantCardContent.vue';
-import SantCardFooter from './src/components/cards/SantCardFooter.vue';
-import SantList from './src/components/lists/SantList.vue';
-import SantListItem from './src/components/lists/SantListItem.vue';
-import SantMenu from './src/components/menu/SantMenu.vue';
-import SantSeparator from './src/components/separator/SantSeparator.vue';
-import SantTab from './src/components/tabs/SantTab.vue';
-import SantTabs from './src/components/tabs/SantTabs.vue';
-import SantInput from './src/components/input/SantInput.vue';
-import SantToolbar from './src/components/toolbar/SantToolbar.vue';
-import SantTooltip from './src/components/tooltip/SantTooltip.vue';
-import SantWindow from './src/components/window/SantWindow.vue';
+import EssAvatar from './src/components/avatars/EssAvatar.vue';
+import EssAvatarIcon from './src/components/avatars/EssAvatarIcon.vue';
+import EssBadge from './src/components/badges/EssBadge.vue';
+import EssButton from './src/components/buttons/EssButton.vue';
+import EssFloatButton from './src/components/buttons/EssFloatButton.vue';
+import EssCard from './src/components/cards/EssCard.vue';
+import EssCardHeader from './src/components/cards/EssCardHeader.vue';
+import EssCardContent from './src/components/cards/EssCardContent.vue';
+import EssCardFooter from './src/components/cards/EssCardFooter.vue';
+import EssList from './src/components/lists/EssList.vue';
+import EssListItem from './src/components/lists/EssListItem.vue';
+import EssMenu from './src/components/menu/EssMenu.vue';
+import EssSeparator from './src/components/separator/EssSeparator.vue';
+import EssTab from './src/components/tabs/EssTab.vue';
+import EssTabs from './src/components/tabs/EssTabs.vue';
+import EssInput from './src/components/input/EssInput.vue';
+import EssToolbar from './src/components/toolbar/EssToolbar.vue';
+import EssTooltip from './src/components/tooltip/EssTooltip.vue';
+import EssWindow from './src/components/window/EssWindow.vue';
 
 const components = [
-  SantAvatar,
-  SantAvatarIcon,
-  SantBadge,
-  SantButton,
-  SantFloatButton,
-  SantCard,
-  SantCardHeader,
-  SantCardContent,
-  SantCardFooter,
-  SantList,
-  SantListItem,
-  SantMenu,
-  SantSeparator,
-  SantTab,
-  SantTabs,
-  SantInput,
-  SantToolbar,
-  SantTooltip,
-  SantWindow,
+  EssAvatar,
+  EssAvatarIcon,
+  EssBadge,
+  EssButton,
+  EssFloatButton,
+  EssCard,
+  EssCardHeader,
+  EssCardContent,
+  EssCardFooter,
+  EssList,
+  EssListItem,
+  EssMenu,
+  EssSeparator,
+  EssTab,
+  EssTabs,
+  EssInput,
+  EssToolbar,
+  EssTooltip,
+  EssWindow,
 ];
 
 const Components = {

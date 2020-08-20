@@ -6,12 +6,12 @@
 
 <script lang="ts">
 import Component from 'vue-class-component';
-import EssToolbar from './EssToolbar';
+import Toolbar from './Toolbar';
 
 Component({
-  name: 'SantToolbar',
+  name: 'EssToolbar',
 });
-export default class SantToolbar extends EssToolbar {}
+export default class EssToolbar extends Toolbar {}
 </script>
 
 <style>
